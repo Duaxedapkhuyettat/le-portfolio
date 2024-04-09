@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth scroll-pt-14">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body class="min-h-screen bg-slate-50 text-black dark:bg-black dark:text-white">
+    <header class="bg-blue-700 text-white sticky top-0 z-10">
+        <section class="max-w-4xl mx-auto p-4 flex justify-between items-center">
+                <a href="#"><img src="image/Asset 2.svg" width="100" height="100" alt="logo"></a>
+            <div>
+                <button id="mobile-open-button" class="text-3xl md:hidden cursor-pointer">&#9776;</button>
+                <nav class="hidden md:block space-x-8 text-xl" aria-label="main">
+                    <a href="#Profession" class="hover:opacity-40">My Profession</a>
+                    <a href="#Project" class="hover:opacity-40">My Project</a>
+                    <a href="#Client" class="hover:opacity-40">My Clients</a>
+                    <a href="#Contact" class="hover:opacity-40">Contact Me</a>
+                </nav>
+            </div>
+        </section>
+        <section class="absolute top-0 bg-black w-full text-5xl flex-col justify-center origin-top animate-open-menu hidden" id="mobile-menu">
+            <button class="self-end text-7xl px-6">&times;</button>
+            <nav class="flex flex-col min-h-screen items-center py-8" aria-label="mobile">
+                <a href="#Profession" class="hover:opacity-40">My Profession</a>
+                <a href="#Project" class="w-full text-center py-6 hover:opacity-70">My Projects</a>
+                <a href="#Client" class="w-full text-center py-6 hover:opacity-70">My Clients</a>
+                <a href="#Contact" class="w-full text-center py-6 hover:opacity-70">Contact Me</a>
+            </nav>
+        </section>
+    </header>
+    <section id="hero" class="w-full relative mb-4">
+        <img src="image/banner.jpg" class="brightness-50 hidden md:block" width="1920" height="1080" alt="Banner">
+        <div class=" lg:bottom-1/4 lg:absolute lg:right-1/4 lg:left-12 text-center lg:text-left mt-4 text-white">
+            <h1 class="lg:text-7xl text-balance font-bold text-3xl">This is where the adventure of mine begin</h1>
+            <p class="mx-4 lg:mx-0 lg:text-2xl text-lg mt-4 dark:text-slate-400">Wanna grab visual attention? Create graphic element in your project? Better call Nghikk</p>
+            <div class="flex flex-row gap-4 mt-4 justify-center lg:justify-start">
+                <button class="p-4 bg-blue-700 rounded-xl hover:bg-white hover:text-blue-700">About Me</button>
+                <button class="p-4 rounded-xl hover:bg-white hover:text-blue-700 bg-blue-700">Contact Me</button>
+            </div>
+        </div>
+    </section>
+    <main class="max-w-4xl mx-auto">
+        <!-- <section id="hero" class="justify-center flex-col-reverse items-center p-6 gap-8 mb-12 flex sm:flex-row widescreen:section-min-height tallscreen:section-min-height">
+            <article class="sm:w-1/2">
+                <h2 class="max-w-md sm:text-5xl font-bold text-center dark:text-white">Greeting from Nghikk</h2>
+                <p class="max-w-md text-2xl mt-4 text-center sm:text-left dark: text-slate-400">Wanna grab visual attention? Create graphic element in your project? Better call Nghikk</p>
+                <div class="flex flex-row gap-4 justify-center mt-4">
+                    <button class="p-4 bg-blue-800 rounded-xl hover:bg-transparent border-blue-800 border-2">About Me</button>
+                    <button class="p-4 rounded-xl hover:bg-blue-800 border-blue-800 border-2">Contact Me</button>
+                </div>
+            </article>
+            <img src="image/sensei.png" alt="" class="w-1/2">
+        </section>  -->
+        
+        <section class="p-6 my-12">
+            <h2 class=" text-4xl font-bold text-center sm:text-5xl mb-8 text-slate-600 dark:text-white">The neverending pursuit of comtemporary art</h2>
+            <article class="flex-col md:flex-row flex gap-8 items-center">
+                <figure>
+                    <img src="image/nghikk.JPG" alt="nghikk" class="rounded-lg">
+                </figure>
+                <div>
+                    <p class="sm:text-2xl text-xl dark:text-slate-400 text-slate-500">With 3 years of passionate dedication to UI/UX and 2D design, I'm ready to transform your project with visually stunning and user-centric solutions. Let's collaborate to deliver the wonder of art to your audience.</p>
+                    <div class="flex-row flex gap-4 mt-4">
+                        <p class="border-4  w-1/2 text-center border-blue-500 rounded-lg p-6 hover:rounded-full transition-all ease-in-out duration-1000 hover:duration-1000"><span class="text-4xl text-blue-500 font-bold">37<br></span>Projects done</p>
+                        <p class="border-4 p-6 text-center border-blue-500 rounded-lg w-1/2 hover:rounded-full transition-all ease-in-out duration-1000 hover:duration-1000 delay-0"><span class="text-4xl text-blue-500 font-bold">15<br></span>Contracts made</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white">
+        <section class="p-6 my-12" id="Profession">
+            <h2 class=" text-4xl font-bold text-center sm:text-5xl mb-8 text-slate-600 dark:text-white">What am I capable of?</h2>
+            <article class="gap-8 flex flex-col sm:flex-row justify-between text-white">
+                <div class="bg-blue-700 p-6 rounded-3xl sm:w-1/3 hover:bg-white hover:text-blue-700">
+                    <h3 class="text-center text-3xl font-bold mb-2">Soft Skills</h3>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">Design thinking</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">Team Management</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">Communication</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">Project Planning</p>
+                </div>
+                <div class="bg-blue-700 p-6 rounded-3xl sm:w-1/3 hover:bg-white hover:text-blue-700">
+                    <h3 class="text-center text-3xl font-bold mb-2">Hard Skills</h3>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">UI/UX Design</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">Web/Application Design</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">2D Design</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">3D Design</p>
+                    <p class="text-center hover:text-blue-500 text-lg sm:text-xl">Photography</p>
+                </div>
+            </article>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white">
+        <section class="p-6 my-12">
+            <h2 class=" text-4xl font-bold text-center sm:text-5xl mb-8 text-slate-600 dark:text-white">My Journey</h2>
+            <article class="flex sm:flex-row gap-8 items-center flex-col">
+                <i class="fa-solid fa-graduation-cap fa-3x bg-blue-700 text-white px-5 py-7 inline-block rounded-full"></i>
+                <div>
+                    <h6 class="text-blue-400">2023-2026</h6>
+                    <h4 class="text-3xl font-bold mb-2">Advanced Diploma in Multimedia</h4>
+                    <h6 class="text-2xl font-semibold mb-2">Arena Multimedia</h6>
+                    <p class="text-slate-400 text-lg">I've met many people there who taught me almost the foundation of my soft skills and hard skills, told me to love my job and nurture my dream. It wasn't a tough time, but challenging enough to make me keep striving forward and constantly learn new things.</p>
+                </div>
+            </article>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white">
+        <section class="p-6 my-12" id="Project">
+            <h2 class=" text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-600 dark:text-white">My Projects</h2>
+            <ul class="list-none mx-auto my-12 flex flex-col sm:flex-row items-center gap-8">
+                <li class="w-2/3 sm:w-5/6 rounded-3xl group/click">
+                    <img src="image/2.jpg" class="rounded-xl group-hover/click:brightness-50" alt="">
+                    <button class="absolute border-2 border-solid border-white p-2 top-1/3 left-1/3 rounded-md hidden group-hover/click:inline-block">See More</button>
+                </li>
+                <li class="w-2/3 sm:w-5/6 rounded-3xl relative bg-blue-600 group/click">
+                    <img src="image/1.png" class="group-hover/click:brightness-50  rounded-xl" alt="">
+                    <button class="absolute border-2 border-solid border-white p-2 top-1/3 left-1/3 rounded-md hidden group-hover/click:inline-block">See More</button>
+                </li>
+                <li class="w-2/3 sm:w-5/6 rounded-3xl group/click">
+                    <img src="image/3.jpg" class="rounded-xl group-hover/click:brightness-50" alt="">
+                    <button class="absolute border-2 border-solid border-white p-2 top-1/3 left-1/3 rounded-md hidden group-hover/click:inline-block">See More</button>
+                </li>
+            </ul>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white">
+        <section class="p-6 my-12" id="Client">
+            <h2 class=" text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-600 dark:text-white">Client Review</h2>
+            <figure class="my-12">
+                <blockquote class="bg-blue-700 text-white dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-blue-400 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-blue-400 after:transform after:-translate-x-2 after:-translate-y-2">He has a solid design knowledge and great team chemistry. Would recommend 10/10</p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:texl-2xl dark:text-slate-400 text-slate-500 mt-2 text-right">&#8212; Mohammed Satij, Mentor of Nghikk.
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-blue-700 text-white dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-blue-400 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-blue-400 after:transform after:-translate-x-2 after:-translate-y-2">He is a great leader that guide our design department through hard time, I owe him for that</p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:texl-2xl dark:text-slate-400 text-slate-500 mt-2 text-right">&#8212; Cristiano Liêmnaldo, CEO The Liems.
+                </figcaption>
+            </figure>
+            <figure class="my-12">
+                <blockquote class="bg-blue-700 text-white dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                    <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-blue-400 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-blue-400 after:transform after:-translate-x-2 after:-translate-y-2">Whereas disregard and contempt for human rights have resulted in barbarous acts which have outraged the conscience of mankind.</p>
+                </blockquote>
+                <figcaption class="italic text-xl sm:texl-2xl dark:text-slate-400 text-slate-500 mt-2 text-right">&#8212; Universal Declaration of Human Rights
+                </figcaption>
+            </figure>
+        </section>
+        <hr class="mx-auto bg-black dark:bg-white">
+        <section class="p-6 my-12" id="Contact">
+            <h2 class=" text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-600 dark:text-white">Contact Me</h2>
+            <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                <label for="Your Name">Your Name:</label>
+                <input type="text" id="Your Name" name="Your Name" required minlength="3" placeholder="Your Name" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border:none">
+                <label for="Your Email">Your Email:</label>
+                <input type="text" id="Your Email" name="Your Email" required minlength="3" placeholder="Your Email" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border:none">
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required minlength="3" placeholder="Your Subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border:none">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border:none"></textarea>
+                <button class="bg-blue-800 hover:bg-blue-600 active:bg-blue-400 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-blue-800 text-white text-xl">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>
+                    <a href="mailto:tndavang@gmail.com"><i class="fa-regular fa-envelope"></i> Tndavang@gmail.com</a> <br>
+                    <a href="tel+84386937980"><i class="fa-solid fa-phone"></i> +84 386 937 980</a>  
+                </h2>
+            </address>
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#Profession" class="hover:opacity-90">My Profession</a>
+                <a href="#Project" class="hover:opacity-90">My Project</a>
+                <a href="#Client" class="hover:opacity-90">My Clients</a>
+                <a href="#Contact" class="hover:opacity-90">Contact Me</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span>2022</span></p>
+                <p class="text-right">All Rights Reserved</p> 
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
